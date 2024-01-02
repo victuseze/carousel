@@ -17,7 +17,7 @@ document.querySelectorAll(".inner_thumbnail").forEach((carousel) => {
   
     buttons.forEach((button, i) => {
       button.addEventListener("click", () => {
-        // un-select all the items
+      
         items.forEach((item) =>
           item.classList.remove("carousel__item--selected")
         );
@@ -30,7 +30,6 @@ document.querySelectorAll(".inner_thumbnail").forEach((carousel) => {
       });
     });
   
-    // Select the first item on page load
     items[0].classList.add("carousel__item--selected");
     buttons[0].classList.add("carousel__button--selected");
   });
