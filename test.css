@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Blinker', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-image: url("../../../../images/background_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.navbar .logo img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    margin-left: 3rem;
+    list-style: none;
+}
+li a{
+    color: white;
+    font-size: 12px;
+}
+
+/* main */
+/* main */
+
+main{
+    color: black;
+}
+main li a{
+    color: black;
+}
+main .logo img{
+    font-size: 5rem;
+    width: 80%;
+}
+main .background_2{
+    background-image: url("../../../../images/background_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+.inner_background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+main .major{
+    display: flex;
+    text-align: left;
+    margin-right: 27rem;
+}
+main #number{
+    font-size: 5rem;
+    color: #c5cad5;
+}
+.major h2{
+    margin-top: 3rem;
+    margin-right: 5rem;
+    text-align: center;
+    color: #3f4e6b;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.thumbnails{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin-top: 22rem;
+}
+.inner_thumbnail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+}
+
+/* Climb */
+/* Climb */
+
+.climb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.climb_major{
+    display: flex;
+}
+#climb_number{
+    font-size: 5rem;
+    color: #a8aeba;
+}
+.climb h2{
+    margin-top: 3rem;
+    margin-right: 5rem;
+    text-align: center;
+    color: #3f4e6b;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.climb_major h2{
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+.climb p{
+    margin-left: 2rem;
+}
+
+/* Base */
+.base{
+    background-color: #3f4e6b;
+}
+.base .background3{
+    background-image: url('../../../../images/bg_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.mount{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.2rem;
+    margin-left: 20rem;
+    font-size: 1rem;
+}
+#mount1{
+    margin-right: 1rem;
+    background-color: #c5cad5;
+    color: #a8aeba;
+    padding: 0.2rem;
+}
+#mount2 a{
+    margin-right: 1rem;
+    color:  #c5cad5;
+    padding: 0.2rem;
+}
+.schedule{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.date{
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1.6rem;
+    border-radius: 8px;
+    margin-right: 30rem;
+}
+.date p{
+    color: black;
+}
+.base .first{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.base .second{
+    margin-bottom: 2rem;
+}
+.base span{
+    margin-left: 2rem;
+}
+.base p{
+    font-size: 1rem;
+}
+.base h2{
+    color:  #3f4e6b;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #3f4e6b;
+}
+.footer p{
+    font-size: 0.8rem;
+    color: #a8aeba;
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        background-image: url("../../../../images/background_1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 25vh;
+    }
+    main .background_2{
+        background-image: url("../../../../images/background_2.jpg");
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    .thumbnails{
+        margin: 0px;
+    }
+    .inner_thumbnail{
+        position: relative;
+        display: flex;
+        font-size: 1rem;
+        width: 100vw;
+    }
+    .thumbnails img{
+        height: 11vh;
+    }
+    .carousel__item {
+        font-weight: bold;
+        font-size: 2em;
+        color: #ffffff;
+        display: none;
+    }
+    .carousel__item--selected {
+        display: block;
+    }
+    .carousel__button {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    } 
+    .carousel__button--selected {
+        background: rgba(255, 255, 255, 222);
+        padding: 0.2rem;
+        /* background: yellow; */
+    }
+    .carousel__nav {
+        width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+    main #history{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        padding-top: 0px;
+        color: white;
+    }
+    .major{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    main #number{
+        font-size: 5rem;
+        color: #c5cad5;
+    }
+    .major h2{
+        margin-top: 0rem;
+        margin-right: 0rem;
+        text-align: center;
+        color: #c5cad5;
+        font-weight: bolder;
+        font-size: 1.7rem;
+    }
+    .base .background3{
+        background-image: url('../../../../images/bg_3.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30vh;
+    }
+    .base{
+        height: 30vh;
+    }
+    .schedule{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        height: fit-content;
+    }
+    .date{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 1.6rem;
+        border-radius: 8px;
+        margin: 0px;
+        width: 80vw;
+        margin-top: 2rem;
+    }
+    .climb{
+        padding: 1rem;
+    }
+}
